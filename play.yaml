@@ -6,7 +6,7 @@
       - name: apache2
         apt: install -y apache2
 
-   - name: install nginx
+  - name: install nginx
     hosts: enginx
     become: true
     tasks: 

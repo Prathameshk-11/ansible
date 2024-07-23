@@ -1,0 +1,16 @@
+---
+  - name: install apache2
+    hosts: apache
+    become: true
+    tasks: 
+      - name: apache2
+        apt: install -y apache2
+
+   - name: install nginx
+    hosts: enginx
+    become: true
+    tasks: 
+      - name: nginx
+        apt: sudo apt install -y nginx
+
+    

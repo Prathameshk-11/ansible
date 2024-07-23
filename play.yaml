@@ -1,16 +1,21 @@
 ---
-  - name: install apache2
-    hosts: apache
-    become: true
-    tasks: 
-      - name: apache2
-        apt: install -y apache2
+- name: Install Apache2
+  hosts: apache
+  become: true
+  tasks:
+    - name: Install Apache2
+      apt:
+        name: apache2
+        state: present
 
-  - name: install nginx
-    hosts: enginx
-    become: true
-    tasks: 
-      - name: nginx
-        apt:  install -y nginx
+- name: Install Nginx
+  hosts: nginx
+  become: true
+  tasks:
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
 
     

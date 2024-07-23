@@ -11,6 +11,6 @@
     become: true
     tasks: 
       - name: nginx
-        apt: sudo apt install -y nginx
+        apt:  install -y nginx
 
     
